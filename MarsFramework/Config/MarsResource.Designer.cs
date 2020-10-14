@@ -61,6 +61,15 @@ namespace MarsFramework.Config {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to http://192.168.99.100:5000.
+        /// </summary>
+        internal static string AppURL {
+            get {
+                return ResourceManager.GetString("AppURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 2.
         /// </summary>
         internal static string Browser {
@@ -70,11 +79,29 @@ namespace MarsFramework.Config {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to your path.
+        ///   Looks up a localized string similar to C:\Study\IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\ExcelData\TestData.xlsx.
         /// </summary>
         internal static string ExcelPath {
             get {
                 return ResourceManager.GetString("ExcelPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\Study\IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\ExcelData\TestDataManageListings.xlsx.
+        /// </summary>
+        internal static string ExcelPathManageListings {
+            get {
+                return ResourceManager.GetString("ExcelPathManageListings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\Study\IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\ExcelData\TestDataShareSkill.xlsx.
+        /// </summary>
+        internal static string ExcelPathShareSkill {
+            get {
+                return ResourceManager.GetString("ExcelPathShareSkill", resourceCulture);
             }
         }
         
@@ -88,7 +115,7 @@ namespace MarsFramework.Config {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to your path.
+        ///   Looks up a localized string similar to C:\Study/IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\TestReports\MarsReports.html.
         /// </summary>
         internal static string ReportPath {
             get {
@@ -97,7 +124,7 @@ namespace MarsFramework.Config {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to your path.
+        ///   Looks up a localized string similar to C:\Study\IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\Config\XMLFile.xml.
         /// </summary>
         internal static string ReportXMLPath {
             get {
@@ -106,7 +133,7 @@ namespace MarsFramework.Config {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to your path.
+        ///   Looks up a localized string similar to C:\Study\IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\TestReports\Screenshots\.
         /// </summary>
         internal static string ScreenShotPath {
             get {

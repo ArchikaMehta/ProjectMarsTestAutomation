@@ -117,24 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AppURL" xml:space="preserve">
+    <value>http://192.168.99.100:5000</value>
+  </data>
   <data name="Browser" xml:space="preserve">
     <value>2</value>
     <comment>1 for firefox and 2 for Chrome</comment>
   </data>
   <data name="ExcelPath" xml:space="preserve">
-    <value>your path</value>
+    <value>C:\Study\IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\ExcelData\TestData.xlsx</value>
+  </data>
+  <data name="ExcelPathManageListings" xml:space="preserve">
+    <value>C:\Study\IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\ExcelData\TestDataManageListings.xlsx</value>
+  </data>
+  <data name="ExcelPathShareSkill" xml:space="preserve">
+    <value>C:\Study\IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\ExcelData\TestDataShareSkill.xlsx</value>
   </data>
   <data name="IsLogin" xml:space="preserve">
     <value>true</value>
     <comment>If true Login, else Register</comment>
   </data>
   <data name="ReportPath" xml:space="preserve">
-    <value>your path</value>
+    <value>C:\Study/IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\TestReports\MarsReports.html</value>
   </data>
   <data name="ReportXMLPath" xml:space="preserve">
-    <value>your path</value>
+    <value>C:\Study\IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\Config\XMLFile.xml</value>
   </data>
   <data name="ScreenShotPath" xml:space="preserve">
-    <value>your path</value>
+    <value>C:\Study\IndustryConnect\git\ProjectMarsTestAutomationHybridFramework\MarsFramework\TestReports\Screenshots\</value>
   </data>
 </root>
