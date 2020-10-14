@@ -72,8 +72,6 @@ namespace MarsFramework.Pages
 
             //Click on join button to Sign Up
             JoinBtn.Click();
-
-
         }
     }
 }

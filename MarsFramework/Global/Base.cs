@@ -1,8 +1,10 @@
 ﻿using MarsFramework.Config;
 using MarsFramework.Pages;
 using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Support.UI;
 using RelevantCodes.ExtentReports;
 using System;
 using static MarsFramework.Global.GlobalDefinitions;
@@ -15,6 +17,8 @@ namespace MarsFramework.Global
 
         public static int Browser = Int32.Parse(MarsResource.Browser);
         public static String ExcelPath = MarsResource.ExcelPath;
+        public static String ExcelPathShareSkill = MarsResource.ExcelPathShareSkill;
+        public static String ExcelPathManageListings = MarsResource.ExcelPathManageListings;
         public static string ScreenshotPath = MarsResource.ScreenShotPath;
         public static string ReportPath = MarsResource.ReportPath;
         #endregion
@@ -35,10 +39,12 @@ namespace MarsFramework.Global
 
                 case 1:
                     GlobalDefinitions.driver = new FirefoxDriver();
+                    GlobalDefinitions.driver.Navigate().GoToUrl(MarsResource.AppURL);
                     break;
                 case 2:
                     GlobalDefinitions.driver = new ChromeDriver();
                     GlobalDefinitions.driver.Manage().Window.Maximize();
+                    GlobalDefinitions.driver.Navigate().GoToUrl(MarsResource.AppURL);
                     break;
 
             }
@@ -63,14 +69,13 @@ namespace MarsFramework.Global
 
         }
 
-
         [TearDown]
         public void TearDown()
         {
             // Screenshot
             String img = SaveScreenShotClass.SaveScreenshot(GlobalDefinitions.driver, "Report");//AddScreenCapture(@"E:\Dropbox\VisualStudio\Projects\Beehive\TestReports\ScreenShots\");
             test.Log(LogStatus.Info, "Image example: " + img);
-            // end test. (Reports)
+            //end test. (Reports);
             extent.EndTest(test);
             // calling Flush writes everything to the log file (Reports)
             extent.Flush();
